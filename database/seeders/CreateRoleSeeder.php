@@ -1,0 +1,31 @@
+<?php
+
+namespace Database\Seeders;
+
+use App\Models\Role;
+use Illuminate\Database\Seeder;
+
+class CreateRoleSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        $role = [
+            [
+                'id' => 1,
+                'name' => 'Admin',
+            ],
+            [
+                'id' => 2,
+                'name' => 'User',
+            ],
+        ];
+            foreach($user as $key => $role){
+                Role::create($role);
+            }
+    }
+}
