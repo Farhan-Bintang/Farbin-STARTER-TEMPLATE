@@ -2,60 +2,6 @@
 
 return [
 
-    //Menu
-    'menu' => [
-        'MAIN NAVIGATION',
-        [
-            'text' => 'Blog',
-            'url' => 'admin/blog',
-            'can' => 'isUser',
-        ],
-        [
-            'text' => 'Pages',
-            'url' => 'admin/pages',
-            'icon' => 'fas fa-fw fa-file',
-            'can' => ['isUser', 'isAdmin'],
-        ],
-        [
-            'header' => 'ACCOUNT SETTINGS'
-        ],
-        [
-            'text' => 'Profile',
-            'route' => 'admin.profile',
-            'icon' => 'fas fa-fw fa-user',
-            'can' => 'isAdmin',
-        ],
-        [
-            'text' => 'Change Password',
-            'route' => 'admin.password',
-            'icon' => 'fas fa-fw fa-lock',
-            'can' => 'isAdmin',
-        ],
-    ],
-
-    //Pluggins
-    'pluggins' => [
-            'Database' => [
-                'active' => true,
-                'files' => [
-                    [
-                        'type' => 'js',
-                        'asset' => false,
-                        'location' => '//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js',
-                    ],
-                    [
-                        'type' => 'js',
-                        'asset' => false,
-                        'location' => '//cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js',
-                    ],
-                    [
-                        'type' => 'css',
-                        'asset' => false,
-                        'location' => '//cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.js',
-                    ],
-                ],
-            ],
-        ],
     /*
     |--------------------------------------------------------------------------
     | Title
@@ -349,6 +295,12 @@ return [
             'type'         => 'navbar-search',
             'text'         => 'search',
             'topnav_right' => true,
+        ],
+        [
+            'text'         => 'buku',
+            'url'          => 'admin/books',
+            'icon'         => 'fas fa-fw fa-book',
+            'can'          => 'isAdmin',
         ],
         [
             'type'         => 'fullscreen-widget',

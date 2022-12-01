@@ -18,7 +18,7 @@ class CreateUsersSeeder extends Seeder
             [
                 'name' => 'isUser',
                 'username' => 'isUser',
-                'email' => 'User@mail.com',
+                'email' => 'user@mail.com',
                 'password' => bcrypt('12345'),
                 'roles_id' => 2
             ],
@@ -28,11 +28,11 @@ class CreateUsersSeeder extends Seeder
                 'email' => 'admin@mail.com',
                 'password' => bcrypt('12345'),
                 'roles_id' => 1
-            ],
+            ]
         ];
 
         foreach($user as $key => $value){
-            User:create($value);
+            User::create($value);
         }
     }
 }
