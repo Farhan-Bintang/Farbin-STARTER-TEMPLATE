@@ -297,12 +297,6 @@ return [
             'topnav_right' => true,
         ],
         [
-            'text'         => 'buku',
-            'url'          => 'admin/books',
-            'icon'         => 'fas fa-fw fa-book',
-            'can'          => 'isAdmin',
-        ],
-        [
             'type'         => 'fullscreen-widget',
             'topnav_right' => true,
         ],
@@ -316,6 +310,12 @@ return [
             'text' => 'blog',
             'url'  => 'admin/blog',
             'can'  => 'manage-blog',
+        ],
+        [
+            'text'         => 'buku',
+            'url'          => 'admin/books',
+            'icon'         => 'fas fa-fw fa-book',
+            'can'          => 'isAdmin',
         ],
         [
             'text'        => 'pages',
